@@ -13,7 +13,7 @@ class Schedule {
     }
 
     operator fun invoke(function: Schedule.() -> Unit) {
-        function(this)
+        function()
     }
 
     fun monday(function: () -> Unit) {
