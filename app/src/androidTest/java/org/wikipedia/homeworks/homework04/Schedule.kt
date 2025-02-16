@@ -8,7 +8,7 @@ class Schedule {
     private val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
     private var day: Days? = null
 
-    fun addSchedule(day: Days, scheduleEntity: ScheduleEntity) {
+    private fun addSchedule(day: Days, scheduleEntity: ScheduleEntity) {
         scheduleOfWeek.getOrPut(day) { mutableListOf() }.add(scheduleEntity)
     }
 
