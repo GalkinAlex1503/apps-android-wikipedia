@@ -16,11 +16,11 @@ class OnboardingPageItem(matcher: Matcher<View>) : KViewPagerItem<OnboardingPage
         withId(R.id.imageViewCentered)
     }
 
-    val title = KTextView(matcher) {
+    val textTitle = KTextView(matcher){
         withId(R.id.primaryTextView)
     }
 
-    val subtitle = KTextView(matcher) {
+    val secondTextTitle = KTextView(matcher){
         withId(R.id.secondaryTextView)
     }
 

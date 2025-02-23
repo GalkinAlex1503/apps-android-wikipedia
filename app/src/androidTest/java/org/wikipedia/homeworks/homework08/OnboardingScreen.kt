@@ -31,7 +31,7 @@ object OnboardingScreen : KScreen<OnboardingScreen>() {
         }
     )
 
-    val onboardingPager = KTabLayout {
+    val pageIndicator = KTabLayout {
         withId(R.id.view_onboarding_page_indicator)
     }
 }
