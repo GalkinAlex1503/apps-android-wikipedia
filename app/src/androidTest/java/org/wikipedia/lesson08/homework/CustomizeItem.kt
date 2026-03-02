@@ -9,7 +9,7 @@ import io.github.kakaocup.kakao.text.KTextView
 import org.hamcrest.Matcher
 import org.wikipedia.R
 
-class CustomizeItem(matcher: Matcher<View>): KRecyclerItem<CustomizeItem>(matcher) {
+class CustomizeItem(matcher: Matcher<View>) : KRecyclerItem<CustomizeItem>(matcher) {
 
     val image = KImageView(matcher) {
         withId(R.id.view_announcement_header_image)
