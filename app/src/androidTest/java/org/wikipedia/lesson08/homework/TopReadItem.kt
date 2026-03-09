@@ -12,6 +12,7 @@ class TopReadItem(matcher: Matcher<View>) : KRecyclerItem<TopReadItem>(matcher) 
 
     val title = KTextView(matcher) {
         withId(R.id.view_card_header_title)
+        withText("Featured article")
     }
 
     val menu = KImageView(matcher) {
